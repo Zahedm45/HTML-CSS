@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(218, 221, 226);
+    width: 50%;
+    margin: 10px;
+    
+    text-align: :
+}
+
+#main-box {
+    border: ridge;
+    align-content:;
+    position:absolute;
+    padding: 20px;
+    left: 300px;
+    right: 300px;
+    margin: 0px;
+    background-color: white;
+}
+
+h1 {
+    color :red;
+    background-color: blue;
+    text-align: center;
+}
+#first-picture {
+    float: right;
+    width: 200px;
+    margin-top: -450px;
+
+}
+
+td {
+    border: groove;
+
+}
