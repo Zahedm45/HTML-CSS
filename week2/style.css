@@ -1,0 +1,263 @@
+
+/* grid-floats*/
+
+#grid-floats .grid-item {
+    border: groove;
+    border-radius: 10px; 
+    margin: 5px;
+    height: 550px;
+}
+
+section:nth-of-type(1) h2 {
+    text-align: center;
+    clear: both;
+    border: solid;
+    border-color: rgb(20, 218, 96);
+    background-color: rgb(20, 218, 96);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 6px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(20, 218, 96);
+}
+p {
+    margin: 10px;
+}
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    margin-bottom: 200px;
+}
+
+#grid-floats .grid-item img {
+    width: 100%;
+}
+
+
+/* grid-flex */
+#grid-flex .grid-item img {
+    width: 100%;
+}
+#grid-flex li {
+    border: groove ;
+    margin: 5px;
+    width: 25%;
+    width: calc(25% - 18px);
+    display: block;
+    
+}
+#grid-flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+    
+img {
+    border-bottom-style: ridge;
+    border-bottom-color: rgb(20, 218, 96);
+    border-bottom-width: 1px;
+    
+}
+
+section:nth-of-type(2) h2 {
+    text-align: center;
+    clear: both;
+    border: solid;
+    border-color: rgb(20, 218, 96);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 6px;
+    background-color: rgb(20, 218, 96);
+    
+}
+
+.grid-item:hover {
+    background-color: whitesmoke;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+/* destop */
+@media only screen and (min-width: 1113px) {
+/* grid-float */
+    
+    body {
+        width: 90%;
+        margin-left: 5%;
+
+    }
+    #grid-floats .grid-item {
+        width: 25%;
+        width: calc(25% - 18px);
+        float: left;
+        display: block;
+        overflow: hidden;
+        height: 600px;
+         
+    }
+    #grid-floats .grid-item:first-child {
+        width: 50%;
+        width: calc(50% - 19px);
+        height: 1220px;
+        font-size: 2.2em;
+    }
+    #grid-floats .grid-item:first-child p {
+        margin-top: 50px;
+
+    }
+
+
+    #grid-floats .grid-item:nth-child(2) {
+        float: right;
+    }
+
+    #grid-floats .grid-item:nth-child(6) {
+        clear: left;
+    }
+    #grid-floats .grid-item:last-child {
+        width: 98.5%;
+        clear: both;
+        float: left; 
+        height: 570px;
+        margin-bottom: 200px;   
+    }
+    /* makking last item bigger */
+    #grid-floats .grid-item:last-child img {
+        width: 35%;
+        height: 100%;
+        margin-left: 30px; 
+    }
+    #grid-floats .grid-item:last-child h3 {
+        font-size: 1.6rem;
+        border: hidden;
+        width: 40%;
+        float: right;
+        margin: 0px;
+        position: relative;
+        right: 110px;
+        top: 95px
+    }
+    #grid-floats .grid-item:last-child p {
+        border: hidden;
+        width: 40%;
+        float: right;
+        position: relative;
+        top: -320px;
+        right: 70px;
+        height: 300px;
+        font-size: 1.2rem;
+        margin-top:0px;
+    }
+
+    #grid-floats {
+        padding: 0px;
+    }
+
+/* grid-flex */
+    #grid-flex .grid-item {
+        width: 25%;
+        width: calc(25% - 18px);
+         
+    }
+    #grid-flex .grid-item:first-child {
+        width: 50%;
+        width: calc(50% - 19px); 
+    }
+    #grid-flex .grid-item:nth-child(12) {
+        width: 50%;
+        width: calc(50% - 19px);
+        
+    }   
+    
+}
+/* tab*/
+@media only screen and (min-width: 668px) and (max-width: 1112px) {
+    #grid-floats .grid-item {
+        width: 33.33%;
+        width: calc(33.33% - 16.5px);
+        float: left;
+        display: block;
+        overflow: hidden;
+        margin-left: 4px;
+        height: 590px;
+    }
+    #grid-floats, #grid-flex {
+        padding-left: 0px;
+    }
+    #grid-floats .grid-item:nth-child(-n+2) {
+        width: 50%;
+        width: calc(50% - 17px);
+        height: 600px;
+    }
+    #grid-floats .grid-item:last-child {
+        margin-bottom: 100px;
+    }
+
+    /* grid-flex */
+    #grid-flex .grid-item {
+        width: 33.33%;
+        width: calc(33.33% - 18px);
+    }
+    #grid-flex .grid-item:nth-child(-n+2) {
+        width: 50%;
+        width: calc(50% - 18px);
+        height: 600px;
+    }
+
+}
+/* mobile devices */
+@media only screen and (min-width: 350px) and (max-width: 667px) {
+    #grid-floats, #grid-flex {
+        padding-left: 0px;
+    }
+
+
+    #grid-floats .grid-item {
+        width: 50%;
+        width: calc(50% - 17.49px); 
+        display: block; 
+        float: left;
+        height: 580px;
+
+    }
+
+    #grid-floats .grid-item:first-child {
+        width: 100%;
+        width: calc(100% - 17.49px);
+        height: 640px;
+    }
+    #grid-floats .grid-item:last-child {
+        margin-bottom: 100px;
+    }
+
+    #grid-flex .grid-item {
+            width: 50%;
+            width: calc(50% - 18px); 
+            display: block; 
+            float: left;
+    }
+    #grid-flex .grid-item:first-child {
+        width: 100%;
+        width: calc(100% - 17.49px);
+    }
+    
+
+}
+/* for giant screen */ 
+@media only screen and (min-width: 2000px) {
+    body {
+        width: 70%;
+        position: relative;
+        left: 10%;
+
+    }
+}
